@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>beforeRunningCommand</key>
+	<string>nop</string>
+	<key>command</key>
+	<string>#!/usr/bin/env ruby -wKU
+
+proj = ENV['TM_PROJECT_DIRECTORY']
+`cd #{proj} &amp;&amp; touch tmp/restart.txt`
+</string>
+	<key>input</key>
+	<string>selection</string>
+	<key>keyEquivalent</key>
+	<string>@R</string>
+	<key>name</key>
+	<string>Compile</string>
+	<key>output</key>
+	<string>discard</string>
+	<key>scope</key>
+	<string>source.actionscript.3, text.xml.mxml, text.xml</string>
+	<key>uuid</key>
+	<string>B695032B-A8B3-4A52-ADBC-8B9D18817A3E</string>
+</dict>
+</plist>
